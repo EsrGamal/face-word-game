@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <svg height="200">
+    <circle id="c1" cx="100" cy="100" r="90" stroke="black" stroke-width="2" style="fill: yellow;"/>
+    <g class="eyes">
+      <circle  id="eye1" cx="61" cy="50" r="5" stroke="black" stroke-width="1"/>
+      <circle id="eye2"cx="127" cy="50" r="5" stroke="black" stroke-width="1"/>
+    </g>
+    <path  id="mouse" d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:white; stroke: black; stroke-width: 3;"/>
+  </svg>
+
+  <script>
+       document.getElementById("c1").onclick = function() {
+        document.getElementById("c1").style.fill = "Red";
+        alert("Face")
+      };
+      document.getElementById("eye1").onclick = function() {
+        document.getElementById("eye1").style.fill = "white";
+        alert("left Eye")
+      };
+      document.getElementById("eye2").onclick = function() {
+        document.getElementById("eye2").style.fill = "white";
+        alert("right Eye")
+      };
+      
+      document.getElementById("mouse").onclick = function() {
+        document.getElementById("mouse").style.fill = "black";
+        alert("Mouse")
+      };
+
+
+  </script>
+</body>
+</html>
